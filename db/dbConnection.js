@@ -1,13 +1,14 @@
-
 //Import mongoose
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 //Db url
-const DATABASE_URL = "mongodb+srv://selvamurugaiah100:Mselva95@cluster0.zphx6l8.mongodb.net/work-shop-project-1";
+const DATABASE_URL =
+  "mongodb+srv://selvamurugaiah100:Mselva95@cluster0.zphx6l8.mongodb.net/work";
 
 //Database connection
 
-mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose
+  .connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("MongoDB Atlas connected");
   })
